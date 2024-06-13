@@ -20,12 +20,12 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module tb_encoder;
+module tb_THC;
     reg [31:0] data_in;
     wire [37:0] data_out;
 
  
-    encoder i1 (
+    THC i1 (
         .data_in(data_in),
         .data_out(data_out)
     );
