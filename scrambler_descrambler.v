@@ -19,7 +19,7 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-module scrambler(
+module scrambler_descrambler(
     input wire clk,
     input wire rst,
     input wire [14:0] initial_value,
