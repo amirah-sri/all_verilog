@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module tb_scrambler;
+module tb_scrambler_descrambler;
 reg clk,rst;
 reg [14:0]din;
 reg [7:0] serial_in;
@@ -29,7 +29,7 @@ wire [7:0] scrambled_out;
 wire [7:0] descrambled_out;
 wire [14:0]dout;
 
-scrambler i1(.clk(clk),.rst(rst),.initial_value(din),.dout(dout),.scrambled_out(scrambled_out),.serial_in(serial_in),
+scrambler_descrambler i1(.clk(clk),.rst(rst),.initial_value(din),.dout(dout),.scrambled_out(scrambled_out),.serial_in(serial_in),
 .serial2_in(serial2_in),.descrambled_out(descrambled_out));
 initial begin //t=0
 clk=1;
