@@ -20,13 +20,13 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module tb_decoder;
+module tb_THC_decoder;
 
     reg [37:0] data_in;
     wire [31:0] org_data; 
     wire error; 
 
-    decoder uut (
+    THC_decoder uut (
         .data_in(data_in),
         .org_data(org_data),
         .error(error)
