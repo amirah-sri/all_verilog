@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module decoder(
+module THC_decoder(
     input [37:0] data_in,
     output reg [31:0] org_data, 
      reg error 
